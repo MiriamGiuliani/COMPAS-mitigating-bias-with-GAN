@@ -11,7 +11,9 @@ In 2016, **ProPublca** compared COMPAS scores of 7.000 arrested people in 2013 a
 
 <img src="https://github.com/MiriamGiuliani/COMPAS-mitigating-bias-with-GAN/blob/302e02c2141c0da908bd74a243db3a9ba470d2fd/images/ProPublica_results_summary.png" alt="banner that saysmy name">
 
-The first part of this project is to **replicate the results** of the COMPAS unknown algorithm, by building a simple Feed Forward Neural Network, starting from the data made available by ProPublica. Then, by using a Generative Adversarial Network, I tried to **mitigate the biased results** obtained by the first architecture, by training a generator to predict the recidivism risk of a defendant, in a competition with a discriminator trained to distinguish between black and caucasian people. By fooling the discriminator, the GAN architecture can then help in eliminating the bias in the training process. 
+The first part of this project is to **replicate the results** of the COMPAS unknown algorithm, by building a simple Feed Forward Neural Network, starting from the data made available by ProPublica (link: https://raw.githubusercontent.com/propublica/compas-analysis/master/compas-scores-two-years.csv). 
+
+Then, by using a Generative Adversarial Network, I tried to **mitigate the biased results** obtained by the first architecture, by training a generator to predict the recidivism risk of a defendant, in a competition with a discriminator trained to distinguish between black and caucasian people. By fooling the discriminator, the GAN architecture can then help in eliminating the bias in the training process. 
 
 Finally, I **compared the results** of the two models with the COMPAS predictions and verified how a better degree of _algorithmic fairness_ can be reached by using a different approach to the problem. 
 
